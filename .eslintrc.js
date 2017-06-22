@@ -1,7 +1,12 @@
 module.exports = {
+  root: true,
+  parserOptions: {
+    ecmaVersion: 2017,
+    sourceType: 'module',
+  },
   extends: 'airbnb',
   env: {
-    node: true,
+    browser: true,
   },
   rules: {
     'no-underscore-dangle': ['error', { allow: ['_super'] }],
