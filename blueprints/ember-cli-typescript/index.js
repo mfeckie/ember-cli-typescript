@@ -6,7 +6,7 @@ module.exports = {
   files: function() {
     return [
       path.join(this.path, 'files', 'tsconfig.json'),
-      path.join(this.path, 'files', 'app', 'config', 'environment.d.ts')
+      path.join(this.path, 'files', 'app', 'config', 'environment.d.ts'),
     ];
   },
 
@@ -32,7 +32,7 @@ module.exports = {
     return this.addPackagesToProject([
       { name: 'typescript', target: '^2.1' },
       { name: '@types/ember', target: '^2.7.41' },
-      { name: '@types/rsvp', target: '^3.3.0' }
+      { name: '@types/rsvp', target: '^3.3.0' },
     ]);
-  }
-}
+  },
+};
