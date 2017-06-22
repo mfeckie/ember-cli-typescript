@@ -5,6 +5,7 @@ module.exports = {
   },
   rules: {
     'no-underscore-dangle': ['error', { allow: ['_super'] }],
+    'import/no-extraneous-dependencies': ['off'],
     'comma-dangle': [
       'error',
       {
